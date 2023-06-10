@@ -108,7 +108,7 @@
         xhr.open("POST", url);
         // console.log("hi");
         xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.setRequestHeader("Authorization", "Bearer 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");
+        xhr.setRequestHeader("Authorization", "${API_KEY}");
 
         xhr.onreadystatechange = function () {
         console.log(xhr.status);
