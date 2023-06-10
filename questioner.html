@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Profile - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Image-icons.css">
+    <link rel="stylesheet" href="assets/css/Features-Image-images.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: linear-gradient(#154254, white);">
+            <div class="container-fluid d-flex flex-column p-0">
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item">
+                        <div><a class="btn btn-link nav-link" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button"><i class="far fa-lightbulb"></i>&nbsp;<span>Proposed Endeavor</span></a>
+                            <div class="collapse" id="collapse-4">
+                                <div class="bg-white border rounded py-2 collapse-inner"><a class="collapse-item" href="questioner.html">Questioner</a><a class="collapse-item" href="overview.html">Overview</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="far fa-envelope-open"></i><span>Recommendation Letters</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="far fa-newspaper"></i><span>Cover Letters</span></a><a class="nav-link" href="index.html"><i class="fas fa-table"></i><span>Data Table</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <div class="container-fluid">
+                    <h3 class="text-dark my-4">Questioner</h3>
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3"><label class="form-label" for="first-question" style="font-weight: bold;">1. Full Name and any other identifying details you might need for the document.</label><textarea class="form-control" id="first-question"></textarea></div>
+                                <div class="mb-3"><label class="form-label" for="second-question" style="font-weight: bold;">2. Current occupation and employer.</label><textarea class="form-control" id="second-question"></textarea></div>
+                                <div class="mb-3"><label class="form-label" for="third-question" style="font-weight: bold;">3.Work experience: What roles have they held, at which organizations, and what responsibilities did they have?&nbsp;&nbsp;</label><textarea class="form-control" id="third-question"></textarea></div>
+                                <div class="mb-3"><label class="form-label" for="fourth-question" style="font-weight: bold;">4. Education: What degrees or certifications do they hold, and where did they receive them from?</label><textarea class="form-control" id="fourth-question"></textarea></div>
+                                <div class="mb-3"><label class="form-label" for="fifth-question" style="font-weight: bold;">5. Future plans: What is their proposed endeavor in the United States? Why do they believe it would be beneficial for the country?</label><textarea class="form-control" id="fifth-question"></textarea></div>
+                                <div class="mb-3"><label class="form-label" for="sixth-question" style="font-weight: bold;">6. Contributions to their field: Do they have any noteworthy accomplishments, awards, or recognitions?</label><textarea class="form-control" id="sixth-question"></textarea></div>
+                                <div class="mb-3"><label class="form-label" for="seventh-question" style="font-weight: bold;">7. Publications: Have they published any papers or articles? What were the impacts of these publications?</label><input class="form-control" type="text" id="seventh-question" placeholder="" name="address"></div>
+                                <div class="mb-3"><label class="form-label" for="eighth-question" style="font-weight: bold;">8. References: Do they have references or letters from others in their field supporting their contributions and future plans?</label><textarea class="form-control" id="eighth-question"></textarea></div>
+                                <div class="mb-3"><label class="form-label" for="address" style="font-weight: bold;">9. Evidence: Is there any existing evidence that their proposed endeavor is likely to advance their field or benefit the U.S in a substantial way?</label><textarea class="form-control"></textarea></div>
+                                <div class="text-center mb2"><a class="btn btn-danger btn-icon-split text-center" role="button" style="background: rgb(23,68,86);"><span class="text-white text" onclick="sendData()">Sumbit</span></a></div>
+                                <div class="row mt-4">
+                                    <div class="col d-flex justify-content-center">
+                                        <div id="loader" class="loader invisible"></div>
+                                        <p id="wait" class="text-center invisible mx-2">Please Wait.<br>It takes up to 30 seconds<br>to get the best result.</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3"><textarea class="form-control form-control-lg" id="response" rows="15"></textarea></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
